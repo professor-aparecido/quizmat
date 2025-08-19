@@ -20,12 +20,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
+    
+    <h1>QuizMat</h1>
 
     <div id="filter-container">
-        <div class="header-filter-container">
-            <h1>QuizMat</h1>
-            <input type="text" id="busca-input" placeholder="Buscar por assunto, habilidade...">
-        </div>
+        <h2>Escolha as opções do seu Quiz</h2>
+
+        <label for="busca-input">Buscar por Assunto ou Habilidade:</label>
+        <input type="text" id="busca-input" placeholder="Ex: Divisibilidade ou EF06MA04">
 
         <label>Unidade Temática:</label>
         <div id="unidade-options" class="filter-buttons">
@@ -53,7 +55,7 @@
     </div>
 
     <div id="quiz-container" style="display: none;">
-        <h1>Quiz de Matemática</h1>
+        <h2>Quiz de Matemática</h2>
 
         <div id="quiz-active-content">
             <div class="quiz-metadata">
@@ -88,6 +90,10 @@
             <button id="restart-button">Jogar Novamente</button>
         </div>
     </div>
+
+    <footer>
+        <p>&copy; 2025 QuizMat. Todos os direitos reservados.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
