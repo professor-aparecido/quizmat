@@ -11,7 +11,6 @@
         "instituicao": "CAED"
     },
 {
-   {
     "pergunta": "<div class='pergunta-com-imagem'>Na figura abaixo, o vestido que Maria comprou nessa loja está representado com a indicação do seu comprimento. <img src='images/img01.png' alt='Imagem.'> <p>107 centímetros</p> Maria vai cortar esse vestido, retirando 5,85 centímetros do seu comprimento. Qual será a medida do comprimento desse vestido, em centímetro, após Maria fazer esse corte?</div>",
     "opcoes": [
         "101,15 cm",
