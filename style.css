@@ -367,3 +367,21 @@ footer {
     background-color: #e9ecef;
     border-top: 1px solid #ccc;
 }
+/* Seu arquivo style.css */
+
+/* Estilo para o contêiner de imagem e texto na pergunta */
+.pergunta-com-imagem {
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto verticalmente no centro */
+    gap: 20px; /* Adiciona um espaço entre a imagem e o texto */
+}
+
+.pergunta-com-imagem img {
+    max-width: 40%; /* Limita a largura da imagem para que o texto também caiba */
+    height: auto;
+}
+
+.pergunta-com-imagem p {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+    flex-grow: 1; /* Permite que o texto ocupe o espaço restante */
+}
