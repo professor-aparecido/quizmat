@@ -33,7 +33,7 @@ let questoesFiltradas = [];
 let respostasUsuario = [];
 let quizData = {}; // Objeto que armazena as questões de cada unidade
 
-// Funções para som de ACERTO (geradas via Web Audio API)
+// --- Funções de Som ---
 function somAcerto(){
     const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
     const t=audioCtx.currentTime;
@@ -51,7 +51,6 @@ function somAcerto(){
     o1.stop(t+0.36); o2.stop(t+0.36);
 }
 
-// Função para som de ERRO (gerada via Web Audio API)
 function somErro() {
     const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
     const t = audioCtx.currentTime;
@@ -68,15 +67,20 @@ function somErro() {
     osc.stop(t + 0.2);
 }
 
-// **NOVA FUNÇÃO: Normaliza uma string para comparação**
+// --- Funções Auxiliares ---
 function normalizeString(str) {
     return str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/º/g, 'o').replace(/ /g, '');
 }
 
-// Eventos de clique nos botões de filtro
-unidadeOptions.addEventListener("click", (e) => handleFilterClick(e, unidadeOptions));
-anoOptions.addEventListener("click", (e) => handleFilterClick(e, anoOptions));
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
 
+// --- Funções de Controle do Quiz ---
 function handleFilterClick(event, container) {
     if (event.target.classList.contains('filter-button')) {
         container.querySelectorAll('.filter-button').forEach(btn => btn.classList.remove('active'));
@@ -84,37 +88,12 @@ function handleFilterClick(event, container) {
     }
 }
 
-// Evento para o botão Iniciar
-startButton.addEventListener("click", iniciarQuiz);
-
-// Evento para o botão Próxima Pergunta
-proximoBtn.addEventListener("click", () => {
-    perguntaAtualIndex++;
-    if (perguntaAtualIndex < questoesFiltradas.length) {
-        carregarPergunta();
-        proximoBtn.style.display = "none";
-    } else {
-        exibirResultadoFinal();
-    }
-});
-
-// Evento para o botão Confirmar Resposta
-confirmButton.addEventListener("click", () => {
-    const selectedOption = document.querySelector(".option-button.selected");
-    if (selectedOption) {
-        verificarResposta(selectedOption.textContent, selectedOption);
-    } else {
-        alert("Por favor, selecione uma opção.");
-    }
-});
-
 async function iniciarQuiz() {
     filterContainer.style.display = "none";
     quizContainer.style.display = "block";
     quizActiveContent.style.display = "block";
     quizFinalScreen.style.display = "none";
     
-    // Pega os valores dos filtros
     const unidadeEscolhida = unidadeOptions.querySelector('.filter-button.active').dataset.value;
     const anoEscolhido = anoOptions.querySelector('.filter-button.active').dataset.value;
     const busca = buscaInput.value.trim().toLowerCase();
@@ -153,7 +132,6 @@ async function iniciarQuiz() {
         }
     }
     
-    // Filtra as questões com base nas opções
     let questoesBase = todasAsQuestoes.filter(questao => {
         const porUnidade = unidadeEscolhida === 'todos' || normalizeString(questao.unidade) === normalizeString(unidadeEscolhida);
         const porAno = anoEscolhido === 'todos' || normalizeString(questao.ano) === normalizeString(anoEscolhido);
@@ -163,36 +141,8 @@ async function iniciarQuiz() {
         return porUnidade && porAno && porBusca;
     });
 
-    // --- NOVA LINHA: Embaralha a lista antes de selecionar as questões ---
     shuffleArray(questoesBase);
 
-    // Limita o número de questões para 10
-    questoesFiltradas = questoesBase.slice(0, 10);
-    
-    if (questoesFiltradas.length === 0) {
-        alert("Nenhuma questão encontrada com esses filtros. Por favor, tente outra combinação.");
-        filterContainer.style.display = "flex";
-        quizContainer.style.display = "none";
-        return;
-    }
-    
-    perguntaAtualIndex = 0;
-    pontuacao = 0;
-    respostasUsuario = [];
-    carregarPergunta();
-}    
-    // Filtra as questões com base nas opções
-    let questoesBase = todasAsQuestoes.filter(questao => {
-        // **ALTERAÇÃO 1: Uso da função de normalização para o filtro**
-        const porUnidade = unidadeEscolhida === 'todos' || normalizeString(questao.unidade) === normalizeString(unidadeEscolhida);
-        const porAno = anoEscolhido === 'todos' || normalizeString(questao.ano) === normalizeString(anoEscolhido);
-        
-        const porBusca = busca === '' || questao.assunto.toLowerCase().includes(busca) || questao.habilidadeBncc.toLowerCase().includes(busca) || questao.habilidadeSaeb.toLowerCase().includes(busca);
-        
-        return porUnidade && porAno && porBusca;
-    });
-
-    // Limita o número de questões para 10
     questoesFiltradas = questoesBase.slice(0, 10);
     
     if (questoesFiltradas.length === 0) {
@@ -234,7 +184,6 @@ function carregarPergunta() {
         const button = document.createElement("button");
         button.classList.add("option-button");
         
-        // **ALTERAÇÃO 2: Salva a resposta como um atributo de dados**
         button.dataset.valorOpcao = opcao;
 
         const bulletSpan = document.createElement("span");
@@ -266,7 +215,6 @@ function verificarResposta(opcaoSelecionada, button) {
     const perguntaAtual = questoesFiltradas[perguntaAtualIndex];
     const respostaCorreta = perguntaAtual.respostaCorreta;
     
-    // **ALTERAÇÃO 3: Pega o valor da resposta do atributo de dados**
     const suaResposta = button.dataset.valorOpcao;
     
     const respostaFoiCorreta = suaResposta === respostaCorreta;
@@ -291,7 +239,7 @@ function verificarResposta(opcaoSelecionada, button) {
     
     respostasUsuario.push({
         pergunta: perguntaAtual.pergunta,
-        suaResposta: suaResposta, // Usa a resposta crua para o gabarito
+        suaResposta: suaResposta,
         respostaCorreta: respostaCorreta,
         correto: respostaFoiCorreta
     });
@@ -331,9 +279,32 @@ function exibirGabarito() {
     renderizarLatex();
 }
 
-// Evento para o botão de reinício
+// --- Eventos de Clique ---
+unidadeOptions.addEventListener("click", (e) => handleFilterClick(e, unidadeOptions));
+anoOptions.addEventListener("click", (e) => handleFilterClick(e, anoOptions));
+startButton.addEventListener("click", iniciarQuiz);
+
+proximoBtn.addEventListener("click", () => {
+    perguntaAtualIndex++;
+    if (perguntaAtualIndex < questoesFiltradas.length) {
+        carregarPergunta();
+        proximoBtn.style.display = "none";
+    } else {
+        exibirResultadoFinal();
+    }
+});
+
+confirmButton.addEventListener("click", () => {
+    const selectedOption = document.querySelector(".option-button.selected");
+    if (selectedOption) {
+        verificarResposta(selectedOption.textContent, selectedOption);
+    } else {
+        alert("Por favor, selecione uma opção.");
+    }
+});
+
 restartButton.addEventListener("click", () => {
-    buscaInput.value = ""; // Adicione esta linha
+    buscaInput.value = "";
     quizContainer.style.display = "none";
     filterContainer.style.display = "flex";
 });
