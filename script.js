@@ -277,8 +277,14 @@ function verificarResposta(opcaoSelecionada, button) {
         correto: respostaFoiCorreta
     });
 
-    confirmButton.style.display = "none";
-    proximoBtn.style.display = "block";
+    // Se a pergunta atual é a última, exibe a tela de resultado final
+    if (perguntaAtualIndex === questoesFiltradas.length - 1) {
+        exibirResultadoFinal();
+    } else {
+        // Caso contrário, prepara para a próxima pergunta
+        confirmButton.style.display = "none";
+        proximoBtn.style.display = "block";
+    }
 }
 
 function exibirResultadoFinal() {
