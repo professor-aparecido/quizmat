@@ -295,9 +295,10 @@ function exibirResultadoFinal() {
     exibirGabarito();
 }
 
+// ... (o restante do seu código)
+
 function exibirGabarito() {
     let gabaritoHtml = '<div class="gabarito-container">';
-    // Título "Gabarito" removido
     
     respostasUsuario.forEach((item, index) => {
         const statusClass = item.correto ? 'correto' : 'incorreto';
@@ -305,7 +306,7 @@ function exibirGabarito() {
             <div class="gabarito-item ${statusClass}">
                 <div class="gabarito-header">
                     <span class="gabarito-icon"></span>
-                    <p><strong>Questão ${index + 1}:</strong> ${item.pergunta}</p>
+                    <strong>Questão ${index + 1}:</strong> ${item.pergunta}
                 </div>
                 <p><strong>Sua resposta:</strong> ${item.suaResposta}</p>
                 <p><strong>Resposta Correta:</strong> ${item.respostaCorreta}</p>
@@ -317,6 +318,8 @@ function exibirGabarito() {
     finalAnswerKey.innerHTML = gabaritoHtml;
     renderizarLatex();
 }
+
+// ... (o restante do seu código)
 
 // Evento para o botão de reinício
 restartButton.addEventListener("click", () => {
