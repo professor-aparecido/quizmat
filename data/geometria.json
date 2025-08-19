@@ -34,7 +34,7 @@
     },
     {
         "pergunta": "A diagonal de um quadrado de lado 5 é?",
-        "opcoes": ["5", "10", "$\sqrt{25}$", "$5\\sqrt{2}$"],
+        "opcoes": ["5", "10", "$\\sqrt{25}$", "$5\\sqrt{2}$"],
         "respostaCorreta": "$5\\sqrt{2}$",
         "unidade": "Geometria",
         "ano": "8º ano",
