@@ -555,7 +555,7 @@ function verificarResposta(opcaoSelecionada, button) {
 function exibirResultadoFinal() {
     quizActiveContent.style.display = "none";
     quizFinalScreen.style.display = "block";
-    finalScoreText.textContent = `Sua pontuação final foi de ${pontuacao} de ${questoesFiltradas.length}.`;
+    finalScoreText.textContent = `Pontuação: ${pontuacao} de ${questoesFiltradas.length}.`;
     
     exibirGabarito();
 }
