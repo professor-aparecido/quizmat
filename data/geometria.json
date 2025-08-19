@@ -1,7 +1,12 @@
 [
     {
         "pergunta": "Qual a soma dos ângulos internos de um triângulo?",
-        "opcoes": ["90°", "180°", "270°", "360°"],
+        "opcoes": [
+            "90°",
+            "180°",
+            "270°",
+            "360°"
+        ],
         "respostaCorreta": "180°",
         "unidade": "Geometria",
         "ano": "6º ano",
@@ -12,7 +17,12 @@
     },
     {
         "pergunta": "O que é um quadrado?",
-        "opcoes": ["Um quadrilátero com todos os lados iguais", "Um quadrilátero com todos os ângulos iguais", "Um quadrilátero com 4 lados iguais e 4 ângulos de 90°", "Um polígono de quatro lados"],
+        "opcoes": [
+            "Um quadrilátero com todos os lados iguais",
+            "Um quadrilátero com todos os ângulos iguais",
+            "Um quadrilátero com 4 lados iguais e 4 ângulos de 90°",
+            "Um polígono de quatro lados"
+        ],
         "respostaCorreta": "Um quadrilátero com 4 lados iguais e 4 ângulos de 90°",
         "unidade": "Geometria",
         "ano": "7º ano",
@@ -23,7 +33,12 @@
     },
     {
         "pergunta": "Qual a fórmula para calcular a área de um círculo?",
-        "opcoes": ["$\\pi r$", "$2\\pi r$", "$\\pi r^2$", "$r^2$"],
+        "opcoes": [
+            "$\\pi r$",
+            "$2\\pi r$",
+            "$\\pi r^2$",
+            "$r^2$"
+        ],
         "respostaCorreta": "$\\pi r^2$",
         "unidade": "Geometria",
         "ano": "9º ano",
@@ -34,7 +49,12 @@
     },
     {
         "pergunta": "A diagonal de um quadrado de lado 5 é?",
-        "opcoes": ["5", "10", "$\\sqrt{25}$", "$5\\sqrt{2}$"],
+        "opcoes": [
+            "5",
+            "10",
+            "$\\sqrt{25}$",
+            "$5\\sqrt{2}$"
+        ],
         "respostaCorreta": "$5\\sqrt{2}$",
         "unidade": "Geometria",
         "ano": "8º ano",
@@ -45,7 +65,12 @@
     },
     {
         "pergunta": "O que é um triângulo isósceles?",
-        "opcoes": ["Um triângulo com todos os lados diferentes", "Um triângulo com dois lados iguais", "Um triângulo com todos os lados iguais", "Um triângulo com um ângulo reto"],
+        "opcoes": [
+            "Um triângulo com todos os lados diferentes",
+            "Um triângulo com dois lados iguais",
+            "Um triângulo com todos os lados iguais",
+            "Um triângulo com um ângulo reto"
+        ],
         "respostaCorreta": "Um triângulo com dois lados iguais",
         "unidade": "Geometria",
         "ano": "7º ano",
@@ -56,7 +81,12 @@
     },
     {
         "pergunta": "Qual o volume de um cubo com lado 3cm?",
-        "opcoes": ["9 cm³", "18 cm³", "27 cm³", "81 cm³"],
+        "opcoes": [
+            "9 cm³",
+            "18 cm³",
+            "27 cm³",
+            "81 cm³"
+        ],
         "respostaCorreta": "27 cm³",
         "unidade": "Geometria",
         "ano": "9º ano",
