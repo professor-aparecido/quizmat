@@ -126,7 +126,7 @@ h1 {
     box-shadow: 0 6px 15px rgba(40, 167, 69, 0.35);
 }
 
-/* NOVO ESTILO: Botão "Próxima Pergunta" - COR AZUL */
+/* ESTILO PARA O BOTÃO PRÓXIMA PERGUNTA (AZUL) */
 #next-button {
     margin-top: 20px;
     padding: 15px 30px;
@@ -196,7 +196,21 @@ h1 {
     font-weight: normal;
     color: #333;
     margin-bottom: 20px;
-    text-align: justify;
+    text-align: justify; /* MANTIDO: Justifica o texto da pergunta */
+}
+
+/* ESTILO PARA O BLOCO DE IMAGEM E TEXTO (solução final) */
+.bloco-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px auto;
+}
+
+.bloco-imagem p,
+.bloco-imagem span {
+    margin: 0;
 }
 
 .options-container {
@@ -275,10 +289,12 @@ h1 {
     border-bottom: 3px solid #ccc;
 }
 
+/* NOVO: Aplica a justificação ao item do gabarito */
 .gabarito-item {
     padding: 15px 0;
     margin-bottom: 20px;
     border-bottom: 2px dashed #c7c7c8;
+    text-align: justify; /* ADICIONADO: Justifica todo o texto do gabarito */
 }
 
 .gabarito-item:last-child {
@@ -286,8 +302,9 @@ h1 {
     margin-bottom: 0;
 }
 
+/* ESTILO FINAL DO GABARITO (removido display: flex) */
 .gabarito-header {
-     /* display: flex; REMOVIDO PARA QUE OS ITENS FIQUEM EM BLOCO */
+    /* display: flex; REMOVIDO PARA QUE OS ITENS FIQUEM EM BLOCO */
     align-items: flex-start;
     gap: 10px;
 }
@@ -366,19 +383,4 @@ footer {
     color: #777;
     background-color: #e9ecef;
     border-top: 1px solid #ccc;
-}
-
-
-/* Estilo para o bloco da imagem e seu texto */
-.bloco-imagem {
-    display: flex; /* Define o contêiner como flexível */
-    justify-content: center; /* Centraliza a imagem e o texto horizontalmente */
-    align-items: center; /* Alinha a imagem e o texto verticalmente */
-    gap: 15px; /* Adiciona um espaço entre a imagem e o texto */
-    margin: 20px auto; /* Adiciona margem em cima/baixo e centraliza o bloco */
-}
-
-.bloco-imagem p,
-.bloco-imagem span {
-    margin: 0;
 }
