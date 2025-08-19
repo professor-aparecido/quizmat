@@ -299,7 +299,7 @@ function exibirResultadoFinal() {
 
 function exibirGabarito() {
     let gabaritoHtml = '<div class="gabarito-container">';
-    
+    gabaritoHtml += '<h3>Gabarito</h3>'; 
     respostasUsuario.forEach((item, index) => {
         const statusClass = item.correto ? 'correto' : 'incorreto';
         gabaritoHtml += `
