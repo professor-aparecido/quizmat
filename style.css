@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f4f8;
     display: flex;
-    flex-direction: column; /* Altera para que os elementos fiquem um abaixo do outro */
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
@@ -101,8 +101,8 @@ h1 {
     transform: translateY(-2px);
 }
 
+/* Estilo para os botões de ação (Iniciar, Confirmar, Reiniciar) - COR VERDE */
 #start-quiz-button,
-#next-button,
 #confirm-button,
 #restart-button {
     margin-top: 20px;
@@ -118,12 +118,33 @@ h1 {
     box-shadow: 0 4px 10px rgba(40, 167, 69, 0.25);
 }
 
+/* Efeito de hover para os botões verdes */
 #start-quiz-button:hover,
-#next-button:hover,
 #confirm-button:hover,
 #restart-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(40, 167, 69, 0.35);
+}
+
+/* NOVO ESTILO: Botão "Próxima Pergunta" - COR AZUL */
+#next-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(145deg, #007bff, #0056b3);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.25);
+}
+
+/* Efeito de hover para o botão azul */
+#next-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.35);
 }
 
 /* Melhorias no cabeçalho */
