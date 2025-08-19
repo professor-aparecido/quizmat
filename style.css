@@ -129,10 +129,8 @@ body {
     border: 1px solid #b3d9ff;
     display: flex;
     flex-wrap: wrap;
-    /* --- REMOVA: justify-content: space-between; --- */
-    /* --- ADICIONE: gap e justify-content (opcional, para centralizar) --- */
     gap: 15px; /* Espaço entre os itens, horizontal e vertical */
-    justify-content: space-between; /* Centraliza os itens na linha */
+    justify-content: flex-start; 
 }
 
 .quiz-metadata p {
