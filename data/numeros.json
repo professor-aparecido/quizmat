@@ -21,8 +21,25 @@
     "respostaCorreta": "101,15 cm",
     "unidade": "Números",
     "ano": "6º ano",
-    "habilidadeBncc": "EF06MA10",
+    "habilidadeBncc": "EF06MA11",
     "habilidadeSaeb": "9N1.5",
+    "assunto": "Operações",
+    "instituicao": "CAED"
+},
+
+    {
+    "pergunta": "<div>João quer comprar um conjunto formado por 1 camisa e 1 calça nessa loja. Observe abaixo as 6 camisas e as 4 calças que Delma apresentou a João, para que ele pudesse formar esse conjunto.</div> <div class='bloco-imagem'><img src='imagens/img02.png' alt='Imagem.'> </div> <div>Qual é a quantidade total de conjuntos diferentes que João pode formar escolhendo 1 camisa e 1 calça?",
+    "opcoes": [
+        "4",
+        "6",
+        "10",
+        "24"
+    ],
+    "respostaCorreta": "24",
+    "unidade": "Números",
+    "ano": "6º ano",
+    "habilidadeBncc": "EF06MA03",
+    "habilidadeSaeb": "9N2.2",
     "assunto": "Operações",
     "instituicao": "CAED"
 },
