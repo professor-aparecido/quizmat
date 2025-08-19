@@ -369,9 +369,16 @@ footer {
 }
 
 
-/* Novo estilo para o bloco da imagem e seu texto */
+/* Estilo para o bloco da imagem e seu texto */
 .bloco-imagem {
-    display: block;
-    text-align: center;
+    display: flex; /* Define o contêiner como flexível */
+    justify-content: center; /* Centraliza a imagem e o texto horizontalmente */
+    align-items: center; /* Alinha a imagem e o texto verticalmente */
+    gap: 15px; /* Adiciona um espaço entre a imagem e o texto */
     margin: 20px auto; /* Adiciona margem em cima/baixo e centraliza o bloco */
+}
+
+.bloco-imagem p,
+.bloco-imagem span {
+    margin: 0;
 }
