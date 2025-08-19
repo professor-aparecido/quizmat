@@ -121,7 +121,7 @@ async function iniciarQuiz() {
 
     let todasAsQuestoes = [];
     if (unidadeEscolhida === 'todos') {
-        const unidades = ["numeros", "algebra", "geometria", "grandezasemedidas", "probabilidadeestatistica"];
+        const unidades = ["numeros", "algebra", "geometria", "grandezas", "probabilidade"];
         for (const unidade of unidades) {
             try {
                 if (!quizData[unidade]) {
