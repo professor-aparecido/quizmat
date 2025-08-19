@@ -10,6 +10,23 @@
         "assunto": "Expressões numéricas",
         "instituicao": "CAED"
     },
+{
+    "pergunta": "Na figura abaixo, o vestido que Maria comprou nessa loja está representado com a indicação do seu comprimento. <br><br> <div class='pergunta-com-imagem'><img src='images/img01.png' alt='Imagem.'> <p> 107 centímetros</p></div> <br><br> Maria vai cortar esse vestido, retirando 5,85 centímetros do seu comprimento. Qual será a medida do comprimento desse vestido, em centímetro, após Maria fazer esse corte?",
+    "opcoes": [
+        "101,15 cm",
+        "102,25 cm",
+        "102,85 cm",
+        "112,85 cm"
+    ],
+    "respostaCorreta": "101,15 cm",
+    "unidade": "Números",
+    "ano": "6º ano",
+    "habilidadeBncc": "EF06MA10",
+    "habilidadeSaeb": "9N1.5",
+    "assunto": "Operações",
+    "instituicao": "CAED"
+},
+    
     {
         "pergunta": "Quanto é 7 x 8?",
         "opcoes": ["54", "56", "64", "49"],
