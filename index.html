@@ -22,7 +22,10 @@
 <body>
 
     <div id="filter-container">
-        <h2>Escolha as opções do seu Quiz</h2>
+        <div class="header-filter-container">
+            <h1>QuizMat</h1>
+            <input type="text" id="busca-input" placeholder="Buscar por assunto, habilidade...">
+        </div>
 
         <label>Unidade Temática:</label>
         <div id="unidade-options" class="filter-buttons">
@@ -45,9 +48,6 @@
             <button class="filter-button" data-value="2º EM">2º EM</button>
             <button class="filter-button" data-value="3º EM">3º EM</button>
         </div>
-
-        <label for="busca-input">Buscar por Assunto ou Habilidade:</label>
-        <input type="text" id="busca-input" placeholder="Ex: Divisibilidade ou EF06MA04">
         
         <button id="start-quiz-button">Iniciar Quiz</button>
     </div>
