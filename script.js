@@ -297,8 +297,8 @@ function exibirResultadoFinal() {
 
 function exibirGabarito() {
     let gabaritoHtml = '<div class="gabarito-container">';
-    gabaritoHtml += '<h3>Gabarito</h3>';
-
+    // Título "Gabarito" removido
+    
     respostasUsuario.forEach((item, index) => {
         const statusClass = item.correto ? 'correto' : 'incorreto';
         gabaritoHtml += `
