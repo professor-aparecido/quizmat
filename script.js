@@ -122,7 +122,8 @@ async function iniciarQuiz() {
         for (const unidade of unidades) {
             try {
                 if (!quizData[unidade]) {
-                    const response = await fetch(`${unidade}.json`);
+                    // *** Caminho atualizado aqui ***
+                    const response = await fetch(`data/${unidade}.json`);
                     quizData[unidade] = await response.json();
                 }
                 todasAsQuestoes.push(...quizData[unidade]);
@@ -137,16 +138,17 @@ async function iniciarQuiz() {
     } else {
         try {
             if (!quizData[unidadeEscolhida]) {
-                const response = await fetch(`${unidadeEscolhida}.json`);
+                // *** E aqui também, para uma única unidade! ***
+                const response = await fetch(`data/${unidadeEscolhida}.json`);
                 quizData[unidadeEscolhida] = await response.json();
             }
             todasAsQuestoes.push(...quizData[unidadeEscolhida]);
         } catch (error) {
-            console.error(`Erro ao carregar questões de ${unidadeEscolhida}:`, error);
-            alert(`Erro ao carregar o quiz de ${unidadeEscolhida}. Por favor, tente novamente.`);
-            filterContainer.style.display = "flex";
-            quizContainer.style.display = "none";
-            return;
+                console.error(`Erro ao carregar questões de ${unidadeEscolhida}:`, error);
+                alert(`Erro ao carregar o quiz de ${unidadeEscolhida}. Por favor, tente novamente.`);
+                filterContainer.style.display = "flex";
+                quizContainer.style.display = "none";
+                return;
         }
     }
     
@@ -175,7 +177,6 @@ async function iniciarQuiz() {
     respostasUsuario = [];
     carregarPergunta();
 }
-
 function carregarPergunta() {
     resultadoEl.textContent = "";
     opcoesEl.innerHTML = "";
