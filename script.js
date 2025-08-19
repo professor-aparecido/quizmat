@@ -68,6 +68,11 @@ function somErro() {
     osc.stop(t + 0.2);
 }
 
+// **NOVA FUNÇÃO: Normaliza uma string para comparação**
+function normalizeString(str) {
+    return str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/º/g, 'o').replace(/ /g, '');
+}
+
 // Eventos de clique nos botões de filtro
 unidadeOptions.addEventListener("click", (e) => handleFilterClick(e, unidadeOptions));
 anoOptions.addEventListener("click", (e) => handleFilterClick(e, anoOptions));
@@ -114,15 +119,12 @@ async function iniciarQuiz() {
     const anoEscolhido = anoOptions.querySelector('.filter-button.active').dataset.value;
     const busca = buscaInput.value.trim().toLowerCase();
 
-    // Se a unidade selecionada for "todos", precisamos carregar todos os arquivos JSON.
-    // Caso contrário, carregamos apenas o arquivo da unidade específica.
     let todasAsQuestoes = [];
     if (unidadeEscolhida === 'todos') {
         const unidades = ["numeros", "algebra", "geometria", "grandezasemedidas", "probabilidadeestatistica"];
         for (const unidade of unidades) {
             try {
                 if (!quizData[unidade]) {
-                    // *** Caminho atualizado aqui ***
                     const response = await fetch(`data/${unidade}.json`);
                     quizData[unidade] = await response.json();
                 }
@@ -138,7 +140,6 @@ async function iniciarQuiz() {
     } else {
         try {
             if (!quizData[unidadeEscolhida]) {
-                // *** E aqui também, para uma única unidade! ***
                 const response = await fetch(`data/${unidadeEscolhida}.json`);
                 quizData[unidadeEscolhida] = await response.json();
             }
@@ -154,8 +155,9 @@ async function iniciarQuiz() {
     
     // Filtra as questões com base nas opções
     let questoesBase = todasAsQuestoes.filter(questao => {
-        const porUnidade = unidadeEscolhida === 'todos' || questao.unidade.toLowerCase() === unidadeEscolhida;
-        const porAno = anoEscolhido === 'todos' || questao.ano.toLowerCase() === anoEscolhido.toLowerCase();
+        // **ALTERAÇÃO 1: Uso da função de normalização para o filtro**
+        const porUnidade = unidadeEscolhida === 'todos' || normalizeString(questao.unidade) === normalizeString(unidadeEscolhida);
+        const porAno = anoEscolhido === 'todos' || normalizeString(questao.ano) === normalizeString(anoEscolhido);
         
         const porBusca = busca === '' || questao.assunto.toLowerCase().includes(busca) || questao.habilidadeBncc.toLowerCase().includes(busca) || questao.habilidadeSaeb.toLowerCase().includes(busca);
         
@@ -177,6 +179,7 @@ async function iniciarQuiz() {
     respostasUsuario = [];
     carregarPergunta();
 }
+
 function carregarPergunta() {
     resultadoEl.textContent = "";
     opcoesEl.innerHTML = "";
@@ -202,6 +205,9 @@ function carregarPergunta() {
     perguntaAtual.opcoes.forEach((opcao, index) => {
         const button = document.createElement("button");
         button.classList.add("option-button");
+        
+        // **ALTERAÇÃO 2: Salva a resposta como um atributo de dados**
+        button.dataset.valorOpcao = opcao;
 
         const bulletSpan = document.createElement("span");
         bulletSpan.classList.add("bullet");
@@ -231,15 +237,16 @@ function renderizarLatex() {
 function verificarResposta(opcaoSelecionada, button) {
     const perguntaAtual = questoesFiltradas[perguntaAtualIndex];
     const respostaCorreta = perguntaAtual.respostaCorreta;
-    const textoSemLetra = opcaoSelecionada.trim().replace(/^[A-Z]\s*/, '');
     
-    const respostaFoiCorreta = textoSemLetra === respostaCorreta.trim();
+    // **ALTERAÇÃO 3: Pega o valor da resposta do atributo de dados**
+    const suaResposta = button.dataset.valorOpcao;
+    
+    const respostaFoiCorreta = suaResposta === respostaCorreta;
     
     document.querySelectorAll(".option-button").forEach(btn => btn.disabled = true);
 
     const botaoCorreto = Array.from(document.querySelectorAll(".option-button")).find(btn => {
-        const textoBotao = btn.textContent.trim().replace(/^[A-Z]\s*/, '');
-        return textoBotao === respostaCorreta.trim();
+        return btn.dataset.valorOpcao === respostaCorreta;
     });
 
     if (respostaFoiCorreta) {
@@ -256,7 +263,7 @@ function verificarResposta(opcaoSelecionada, button) {
     
     respostasUsuario.push({
         pergunta: perguntaAtual.pergunta,
-        suaResposta: textoSemLetra,
+        suaResposta: suaResposta, // Usa a resposta crua para o gabarito
         respostaCorreta: respostaCorreta,
         correto: respostaFoiCorreta
     });
