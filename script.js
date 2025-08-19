@@ -121,7 +121,7 @@ async function iniciarQuiz() {
 
     let todasAsQuestoes = [];
     if (unidadeEscolhida === 'todos') {
-        const unidades = ["numeros", "algebra", "geometria", "grandezasemedidas", "probabilidadeeestatistica"];
+        const unidades = ["numeros", "algebra", "geometria", "grandezas", "probabilidade"];
         for (const unidade of unidades) {
             try {
                 if (!quizData[unidade]) {
@@ -153,6 +153,34 @@ async function iniciarQuiz() {
         }
     }
     
+    // Filtra as questões com base nas opções
+    let questoesBase = todasAsQuestoes.filter(questao => {
+        const porUnidade = unidadeEscolhida === 'todos' || normalizeString(questao.unidade) === normalizeString(unidadeEscolhida);
+        const porAno = anoEscolhido === 'todos' || normalizeString(questao.ano) === normalizeString(anoEscolhido);
+        
+        const porBusca = busca === '' || questao.assunto.toLowerCase().includes(busca) || questao.habilidadeBncc.toLowerCase().includes(busca) || questao.habilidadeSaeb.toLowerCase().includes(busca);
+        
+        return porUnidade && porAno && porBusca;
+    });
+
+    // --- NOVA LINHA: Embaralha a lista antes de selecionar as questões ---
+    shuffleArray(questoesBase);
+
+    // Limita o número de questões para 10
+    questoesFiltradas = questoesBase.slice(0, 10);
+    
+    if (questoesFiltradas.length === 0) {
+        alert("Nenhuma questão encontrada com esses filtros. Por favor, tente outra combinação.");
+        filterContainer.style.display = "flex";
+        quizContainer.style.display = "none";
+        return;
+    }
+    
+    perguntaAtualIndex = 0;
+    pontuacao = 0;
+    respostasUsuario = [];
+    carregarPergunta();
+}    
     // Filtra as questões com base nas opções
     let questoesBase = todasAsQuestoes.filter(questao => {
         // **ALTERAÇÃO 1: Uso da função de normalização para o filtro**
