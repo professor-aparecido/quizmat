@@ -68,9 +68,18 @@ function somErro() {
     osc.stop(t + 0.2);
 }
 
-// **NOVA FUNÇÃO: Normaliza uma string para comparação**
+// NOVA FUNÇÃO: Normaliza uma string para comparação
 function normalizeString(str) {
     return str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/º/g, 'o').replace(/ /g, '');
+}
+
+// FUNÇÃO PARA EMBARALHAR: algoritmo de Fisher-Yates
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }
 
 // Eventos de clique nos botões de filtro
@@ -155,7 +164,6 @@ async function iniciarQuiz() {
     
     // Filtra as questões com base nas opções
     let questoesBase = todasAsQuestoes.filter(questao => {
-        // **ALTERAÇÃO 1: Uso da função de normalização para o filtro**
         const porUnidade = unidadeEscolhida === 'todos' || normalizeString(questao.unidade) === normalizeString(unidadeEscolhida);
         const porAno = anoEscolhido === 'todos' || normalizeString(questao.ano) === normalizeString(anoEscolhido);
         
@@ -163,6 +171,9 @@ async function iniciarQuiz() {
         
         return porUnidade && porAno && porBusca;
     });
+
+    // Embaralha a lista antes de selecionar as questões
+    shuffleArray(questoesBase);
 
     // Limita o número de questões para 10
     questoesFiltradas = questoesBase.slice(0, 10);
@@ -206,7 +217,6 @@ function carregarPergunta() {
         const button = document.createElement("button");
         button.classList.add("option-button");
         
-        // **ALTERAÇÃO 2: Salva a resposta como um atributo de dados**
         button.dataset.valorOpcao = opcao;
 
         const bulletSpan = document.createElement("span");
@@ -238,7 +248,6 @@ function verificarResposta(opcaoSelecionada, button) {
     const perguntaAtual = questoesFiltradas[perguntaAtualIndex];
     const respostaCorreta = perguntaAtual.respostaCorreta;
     
-    // **ALTERAÇÃO 3: Pega o valor da resposta do atributo de dados**
     const suaResposta = button.dataset.valorOpcao;
     
     const respostaFoiCorreta = suaResposta === respostaCorreta;
@@ -263,7 +272,7 @@ function verificarResposta(opcaoSelecionada, button) {
     
     respostasUsuario.push({
         pergunta: perguntaAtual.pergunta,
-        suaResposta: suaResposta, // Usa a resposta crua para o gabarito
+        suaResposta: suaResposta,
         respostaCorreta: respostaCorreta,
         correto: respostaFoiCorreta
     });
@@ -305,7 +314,7 @@ function exibirGabarito() {
 
 // Evento para o botão de reinício
 restartButton.addEventListener("click", () => {
-    buscaInput.value = ""; // Adicione esta linha
+    buscaInput.value = ""; // Limpa o campo de busca
     quizContainer.style.display = "none";
     filterContainer.style.display = "flex";
 });
