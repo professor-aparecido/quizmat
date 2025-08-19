@@ -1,0 +1,123 @@
+[
+    {
+        "pergunta": "Qual é a raiz quadrada de 144?",
+        "opcoes": ["10", "12", "14", "16"],
+        "respostaCorreta": "12",
+        "unidade": "Números",
+        "ano": "6º ano",
+        "habilidadeBncc": "EF06MA01",
+        "habilidadeSaeb": "H01",
+        "assunto": "Operações e propriedades",
+        "instituicao": "Maceió"
+    },
+    {
+        "pergunta": "Quanto é 7 x 8?",
+        "opcoes": ["54", "56", "64", "49"],
+        "respostaCorreta": "56",
+        "unidade": "Números",
+        "ano": "6º ano",
+        "habilidadeBncc": "EF06MA07",
+        "habilidadeSaeb": "H02",
+        "assunto": "Multiplicação",
+        "instituicao": "Maceió"
+    },
+    {
+        "pergunta": "O que é um número primo?",
+        "opcoes": ["Qualquer número inteiro", "Um número divisível apenas por 1 e por ele mesmo", "Qualquer número ímpar", "Um número divisível por 2"],
+        "respostaCorreta": "Um número divisível apenas por 1 e por ele mesmo",
+        "unidade": "Números",
+        "ano": "6º ano",
+        "habilidadeBncc": "EF06MA04",
+        "habilidadeSaeb": "H03",
+        "assunto": "Divisibilidade",
+        "instituicao": "Maceió"
+    },
+    {
+        "pergunta": "Qual o valor do logaritmo de 100 na base 10?",
+        "opcoes": ["1", "2", "10", "100"],
+        "respostaCorreta": "2",
+        "unidade": "Números",
+        "ano": "3º EM",
+        "habilidadeBncc": "EM13MAT301",
+        "habilidadeSaeb": "H13",
+        "assunto": "Logaritmos",
+        "instituicao": "Maceió"
+    },
+    {
+        "pergunta": "Calcule $3^2 + 4^2$.",
+        "opcoes": ["7", "14", "25", "49"],
+        "respostaCorreta": "25",
+        "unidade": "Números",
+        "ano": "7º ano",
+        "habilidadeBncc": "EF07MA01",
+        "habilidadeSaeb": "H07",
+        "assunto": "Potenciação",
+        "instituicao": "Maceió"
+    },
+    {
+        "pergunta": "Qual o resultado de 10 ÷ 2 + 3?",
+        "opcoes": ["5", "8", "6", "13"],
+        "respostaCorreta": "8",
+        "unidade": "Números",
+        "ano": "6º ano",
+        "habilidadeBncc": "EF06MA03",
+        "habilidadeSaeb": "H04",
+        "assunto": "Ordem das operações",
+        "instituicao": "Maceió"
+    },
+    {
+        "pergunta": "Qual o valor de 5! (fatorial de 5)?",
+        "opcoes": ["5", "25", "100", "120"],
+        "respostaCorreta": "120",
+        "unidade": "Números",
+        "ano": "9º ano",
+        "habilidadeBncc": "EF09MA03",
+        "habilidadeSaeb": "H05",
+        "assunto": "Fatorial",
+        "instituicao": "Maceió"
+    },
+    {
+        "pergunta": "Qual o menor número primo?",
+        "opcoes": ["0", "1", "2", "3"],
+        "respostaCorreta": "2",
+        "unidade": "Números",
+        "ano": "6º ano",
+        "habilidadeBncc": "EF06MA04",
+        "habilidadeSaeb": "H03",
+        "assunto": "Números primos",
+        "instituicao": "Maceió"
+    },
+    {
+        "pergunta": "O que é um número racional?",
+        "opcoes": ["Um número que pode ser escrito como uma fração", "Qualquer número", "Um número com uma raiz quadrada exata", "Um número que não pode ser escrito como uma fração"],
+        "respostaCorreta": "Um número que pode ser escrito como uma fração",
+        "unidade": "Números",
+        "ano": "8º ano",
+        "habilidadeBncc": "EF08MA01",
+        "habilidadeSaeb": "H01",
+        "assunto": "Conjuntos numéricos",
+        "instituicao": "Maceió"
+    },
+    {
+        "pergunta": "Calcule $2^3 + 3^2$.",
+        "opcoes": ["12", "15", "17", "25"],
+        "respostaCorreta": "17",
+        "unidade": "Números",
+        "ano": "7º ano",
+        "habilidadeBncc": "EF07MA01",
+        "habilidadeSaeb": "H07",
+        "assunto": "Potenciação",
+        "instituicao": "Maceió"
+    },
+    {
+        "pergunta": "Qual o MMC entre 12 e 18?",
+        "opcoes": ["6", "18", "36", "72"],
+        "respostaCorreta": "36",
+        "unidade": "Números",
+        "ano": "6º ano",
+        "habilidadeBncc": "EF06MA06",
+        "habilidadeSaeb": "H08",
+        "assunto": "MMC",
+        "instituicao": "Maceió"
+    }
+]

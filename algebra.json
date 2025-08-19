@@ -1,0 +1,79 @@
+[
+    {
+        "pergunta": "Qual o valor de x em 2x + 5 = 15?",
+        "opcoes": ["5", "10", "15", "20"],
+        "respostaCorreta": "5",
+        "unidade": "Álgebra",
+        "ano": "7º ano",
+        "habilidadeBncc": "EF07MA13",
+        "habilidadeSaeb": "H03",
+        "assunto": "Equações de 1º grau",
+        "instituicao": "Maceió"
+    },
+    {
+        "pergunta": "Qual é a área de um retângulo com lados 2x e 3x?",
+        "opcoes": ["5x", "6x", "5x²", "6x²"],
+        "respostaCorreta": "6x²",
+        "unidade": "Álgebra",
+        "ano": "9º ano",
+        "habilidadeBncc": "EF09MA06",
+        "habilidadeSaeb": "H09",
+        "assunto": "Expressões algébricas",
+        "instituicao": "Maceió"
+    },
+    {
+        "pergunta": "O que é uma equação do segundo grau?",
+        "opcoes": ["Uma equação com expoente 1", "Uma equação com expoente 2", "Uma equação com duas incógnitas", "Uma equação com duas variáveis"],
+        "respostaCorreta": "Uma equação com expoente 2",
+        "unidade": "Álgebra",
+        "ano": "9º ano",
+        "habilidadeBncc": "EF09MA11",
+        "habilidadeSaeb": "H10",
+        "assunto": "Equações de 2º grau",
+        "instituicao": "Maceió"
+    },
+    {
+        "pergunta": "Qual o resultado de $(a + b)^2$?",
+        "opcoes": ["$a^2 + b^2$", "$a^2 + 2ab + b^2$", "$a^2 - 2ab + b^2$", "a + b"],
+        "respostaCorreta": "$a^2 + 2ab + b^2$",
+        "unidade": "Álgebra",
+        "ano": "8º ano",
+        "habilidadeBncc": "EF08MA07",
+        "habilidadeSaeb": "H08",
+        "assunto": "Produtos notáveis",
+        "instituicao": "Maceió"
+    },
+    {
+        "pergunta": "Qual a solução para $x^2 - 4 = 0$?",
+        "opcoes": ["x = 2", "x = -2", "x = 4", "x = 2 e x = -2"],
+        "respostaCorreta": "x = 2 e x = -2",
+        "unidade": "Álgebra",
+        "ano": "9º ano",
+        "habilidadeBncc": "EF09MA11",
+        "habilidadeSaeb": "H10",
+        "assunto": "Equações de 2º grau",
+        "instituicao": "Maceió"
+    },
+    {
+        "pergunta": "Resolva o sistema de equações: $$x+y=7$$ $$x-y=1$$",
+        "opcoes": ["x=4, y=3", "x=3, y=4", "x=5, y=2", "x=2, y=5"],
+        "respostaCorreta": "x=4, y=3",
+        "unidade": "Álgebra",
+        "ano": "8º ano",
+        "habilidadeBncc": "EF08MA16",
+        "habilidadeSaeb": "H09",
+        "assunto": "Sistemas de equações",
+        "instituicao": "Maceió"
+    },
+    {
+        "pergunta": "Qual o valor de 3x + 2 para x = 4?",
+        "opcoes": ["10", "12", "14", "16"],
+        "respostaCorreta": "14",
+        "unidade": "Álgebra",
+        "ano": "7º ano",
+        "habilidadeBncc": "EF07MA13",
+        "habilidadeSaeb": "H03",
+        "assunto": "Expressões algébricas",
+        "instituicao": "Maceió"
+    }
+]
