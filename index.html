@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Matemática</title>
+    
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$']]
+            }
+        };
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div id="filter-container">
+        <h2>Escolha as opções do seu Quiz</h2>
+
+        <label>Unidade Temática:</label>
+        <div id="unidade-options" class="filter-buttons">
+            <button class="filter-button active" data-value="todos">Todas</button>
+            <button class="filter-button" data-value="numeros">Números</button>
+            <button class="filter-button" data-value="algebra">Álgebra</button>
+            <button class="filter-button" data-value="geometria">Geometria</button>
+            <button class="filter-button" data-value="grandezasEMedidas">Grandezas e Medidas</button>
+            <button class="filter-button" data-value="probabilidadeEstatistica">Probabilidade e Estatística</button>
+        </div>
+
+        <label>Ano:</label>
+        <div id="ano-options" class="filter-buttons">
+            <button class="filter-button active" data-value="todos">Todos</button>
+            <button class="filter-button" data-value="6º ano">6º ano</button>
+            <button class="filter-button" data-value="7º ano">7º ano</button>
+            <button class="filter-button" data-value="8º ano">8º ano</button>
+            <button class="filter-button" data-value="9º ano">9º ano</button>
+            <button class="filter-button" data-value="1º EM">1º EM</button>
+            <button class="filter-button" data-value="2º EM">2º EM</button>
+            <button class="filter-button" data-value="3º EM">3º EM</button>
+        </div>
+
+        <label for="busca-input">Buscar por Assunto ou Habilidade:</label>
+        <input type="text" id="busca-input" placeholder="Ex: Divisibilidade ou EF06MA04">
+        
+        <button id="start-quiz-button">Iniciar Quiz</button>
+    </div>
+
+    <div id="quiz-container" style="display: none;">
+        <h1>Quiz de Matemática</h1>
+
+        <div id="quiz-active-content">
+            <div class="quiz-metadata">
+                <p>Unidade: <span id="meta-unidade"></span></p>
+                <p>Ano: <span id="meta-ano"></span></p>
+                <p>Habilidade BNCC: <span id="meta-bncc"></span></p>
+                <p>Habilidade SAEB: <span id="meta-saeb"></span></p>
+                <p>Assunto: <span id="meta-assunto"></span></p>
+                <p>Instituição: <span id="meta-instituicao"></span></p>
+            </div>
+
+            <div id="quiz-info-and-question">
+                <div id="quiz-progress">
+                    <span id="quiz-question-number"></span>
+                </div>
+                <div id="quiz-question" class="question">
+                </div>
+            </div>
+
+            <div id="quiz-options" class="options-container">
+            </div>
+
+            <p id="quiz-result" class="result"></p>
+            
+            <button id="confirm-button" style="display: none;">Confirmar Resposta</button>
+            <button id="next-button" style="display: none;">Próxima Pergunta</button>
+        </div>
+
+        <div id="quiz-final-screen" style="display: none;">
+            <h2 id="final-score-text">Sua pontuação final foi de 0 de 0.</h2>
+            <div id="final-answer-key"></div>
+            <button id="restart-button">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
