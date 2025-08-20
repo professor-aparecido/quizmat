@@ -11,21 +11,16 @@
     "instituicao": "CAED"
 },
     {
-        "pergunta": "O que é um quadrado?",
-        "opcoes": [
-            "Um quadrilátero com todos os lados iguais",
-            "Um quadrilátero com todos os ângulos iguais",
-            "Um quadrilátero com 4 lados iguais e 4 ângulos de 90°",
-            "Um polígono de quatro lados"
-        ],
-        "respostaCorreta": "Um quadrilátero com 4 lados iguais e 4 ângulos de 90°",
-        "unidade": "Geometria",
-        "ano": "7º ano",
-        "habilidadeBncc": "EF07MA19",
-        "habilidadeSaeb": "H11",
-        "assunto": "Polígonos",
-        "instituicao": "Maceió"
-    },
+    "pergunta": "<div>Observe os quatro pontos destacados no plano cartesiano abaixo.</div> <div class='bloco-imagem'><img src='imagens/img06.png' alt='Imagem.'> </div> <div>O par ordenado (6, 5) corresponde a qual ponto nesse plano cartesiano?",
+    "opcoes": [ "I.","II.","III.", "IV."],
+    "respostaCorreta": "III.",
+    "unidade": "Geometria",
+    "ano": "6º ano",
+    "habilidadeBncc": "EF06MA20",
+    "habilidadeSaeb": "9G1.6",
+    "assunto": "Quadriláteros",
+    "instituicao": "CAED"
+},
     {
         "pergunta": "Qual a fórmula para calcular a área de um círculo?",
         "opcoes": [
