@@ -68,18 +68,17 @@ function somErro() {
     osc.stop(t + 0.2);
 }
 
-// NOVA FUNÇÃO: Normaliza uma string para comparação
-function normalizeString(str) {
-    return str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/º/g, 'o').replace(/ /g, '');
-}
-
 // FUNÇÃO PARA EMBARALHAR: algoritmo de Fisher-Yates
-function shuffleArray(array) {
+function embaralharArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
-    return array;
+}
+
+// NOVA FUNÇÃO: Normaliza uma string para comparação
+function normalizeString(str) {
+    return str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/º/g, 'o').replace(/ /g, '');
 }
 
 // Eventos de clique nos botões de filtro
@@ -154,11 +153,11 @@ async function iniciarQuiz() {
             }
             todasAsQuestoes.push(...quizData[unidadeEscolhida]);
         } catch (error) {
-                console.error(`Erro ao carregar questões de ${unidadeEscolhida}:`, error);
-                alert(`Erro ao carregar o quiz de ${unidadeEscolhida}. Por favor, tente novamente.`);
-                filterContainer.style.display = "flex";
-                quizContainer.style.display = "none";
-                return;
+            console.error(`Erro ao carregar questões de ${unidadeEscolhida}:`, error);
+            alert(`Erro ao carregar o quiz de ${unidadeEscolhida}. Por favor, tente novamente.`);
+            filterContainer.style.display = "flex";
+            quizContainer.style.display = "none";
+            return;
         }
     }
     
@@ -173,7 +172,7 @@ async function iniciarQuiz() {
     });
 
     // Embaralha a lista antes de selecionar as questões
-    shuffleArray(questoesBase);
+    embaralharArray(questoesBase);
 
     // Limita o número de questões para 10
     questoesFiltradas = questoesBase.slice(0, 10);
@@ -213,11 +212,15 @@ function carregarPergunta() {
 
     const letras = ['A', 'B', 'C', 'D', 'E', 'F'];
 
+    // CORRIGIDO: Embaralha as opções antes de renderizar
+    embaralharArray(perguntaAtual.opcoes);
+
     perguntaAtual.opcoes.forEach((opcao, index) => {
         const button = document.createElement("button");
         button.classList.add("option-button");
         
-        button.dataset.valorOpcao = opcao;
+        // CORRIGIDO: Agora usa 'data-opcao' para corresponder a 'verificarResposta'
+        button.dataset.opcao = opcao;
 
         const bulletSpan = document.createElement("span");
         bulletSpan.classList.add("bullet");
@@ -278,12 +281,11 @@ function verificarResposta(opcaoSelecionada, button) {
         respostaCorreta: respostaCorreta,
         correto: respostaFoiCorreta
     });
-}
-    // Se a pergunta atual é a última, exibe a tela de resultado final
+
+    // CORRIGIDO: Este bloco foi movido para dentro da função 'verificarResposta'
     if (perguntaAtualIndex === questoesFiltradas.length - 1) {
         exibirResultadoFinal();
     } else {
-        // Caso contrário, prepara para a próxima pergunta
         confirmButton.style.display = "none";
         proximoBtn.style.display = "block";
     }
@@ -297,11 +299,9 @@ function exibirResultadoFinal() {
     exibirGabarito();
 }
 
-// ... (o restante do seu código)
-
 function exibirGabarito() {
     let gabaritoHtml = '<div class="gabarito-container">';
-    gabaritoHtml += '<h3>Gabarito</h3>'; 
+    gabaritoHtml += '<h3>Gabarito</h3>';  
     respostasUsuario.forEach((item, index) => {
         const statusClass = item.correto ? 'correto' : 'incorreto';
         gabaritoHtml += `
@@ -321,18 +321,9 @@ function exibirGabarito() {
     renderizarLatex();
 }
 
-// ... (o restante do seu código)
-
 // Evento para o botão de reinício
 restartButton.addEventListener("click", () => {
     buscaInput.value = ""; // Limpa o campo de busca
     quizContainer.style.display = "none";
     filterContainer.style.display = "flex";
 });
-// Função para embaralhar um array (algoritmo Fisher-Yates)
-function embaralharArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-}
