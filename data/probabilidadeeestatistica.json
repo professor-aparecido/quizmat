@@ -1,6 +1,6 @@
 [
    {
-    "pergunta": "<div>O gráfico abaixo apresenta as quantidades de mercadorias femininas e masculinas que Delma recebeu para reposição do estoque em sua loja.</div> <div class='bloco-imagem'><img src='imagens/img03.png' alt='Imagem.'> </div> <div>De acordo com esse gráfico, qual foi o tipo de mercadoria masculina que Delma recebeu em maior quantidade?",
+    "pergunta": "O gráfico abaixo apresenta as quantidades de mercadorias femininas e masculinas que Delma recebeu para reposição do estoque em sua loja. <div class='bloco-imagem'><img src='imagens/img03.png' alt='Imagem.'> </div> <div>De acordo com esse gráfico, qual foi o tipo de mercadoria masculina que Delma recebeu em maior quantidade?",
     "opcoes": [
         "Carteira.",
         "Chapéu.",
