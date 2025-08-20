@@ -115,79 +115,37 @@
     },
     {
         "pergunta": "Calcule $3^2 + 4^2$.",
-        "opcoes": ["7", "14", "25", "49"],
-        "respostaCorreta": "25",
+        "opcoes": ["$7$", "$14$", "$25$", "$49$"],
+        "respostaCorreta": "$25$",
         "unidade": "Números",
         "ano": "7º ano",
-        "habilidadeBncc": "EF07MA01",
-        "habilidadeSaeb": "H07",
-        "assunto": "Potenciação",
-        "instituicao": "Maceió"
+        "habilidadeBncc": "EF06MA03",
+        "habilidadeSaeb": "9N1.5"",
+        "assunto": "Expressões numéricas",
+        "instituicao": "QuizMat"
     },
     {
-        "pergunta": "Qual o resultado de 10 ÷ 2 + 3?",
-        "opcoes": ["5", "8", "6", "13"],
-        "respostaCorreta": "8",
+        "pergunta": "Qual é o resultado de $10 \\div 2 + 3$?",
+        "opcoes": ["$5$", "$8$", "$6$", "$13$"],
+        "respostaCorreta": "$8$",
         "unidade": "Números",
         "ano": "6º ano",
         "habilidadeBncc": "EF06MA03",
-        "habilidadeSaeb": "H04",
-        "assunto": "Ordem das operações",
-        "instituicao": "Maceió"
+        "habilidadeSaeb": "9N1.5"",
+        "assunto": "Expressões numéricas",
+        "instituicao": "QuizMat"
     },
-    {
-        "pergunta": "Qual o valor de 5! (fatorial de 5)?",
-        "opcoes": ["5", "25", "100", "120"],
-        "respostaCorreta": "120",
-        "unidade": "Números",
-        "ano": "9º ano",
-        "habilidadeBncc": "EF09MA03",
-        "habilidadeSaeb": "H05",
-        "assunto": "Fatorial",
-        "instituicao": "Maceió"
-    },
-    {
-        "pergunta": "Qual o menor número primo?",
-        "opcoes": ["0", "1", "2", "3"],
-        "respostaCorreta": "2",
-        "unidade": "Números",
-        "ano": "6º ano",
-        "habilidadeBncc": "EF06MA04",
-        "habilidadeSaeb": "H03",
-        "assunto": "Números primos",
-        "instituicao": "Maceió"
-    },
-    {
-        "pergunta": "O que é um número racional?",
-        "opcoes": ["Um número que pode ser escrito como uma fração", "Qualquer número", "Um número com uma raiz quadrada exata", "Um número que não pode ser escrito como uma fração"],
-        "respostaCorreta": "Um número que pode ser escrito como uma fração",
-        "unidade": "Números",
-        "ano": "8º ano",
-        "habilidadeBncc": "EF08MA01",
-        "habilidadeSaeb": "H01",
-        "assunto": "Conjuntos numéricos",
-        "instituicao": "Maceió"
-    },
+    
     {
         "pergunta": "Calcule $2^3 + 3^2$.",
-        "opcoes": ["12", "15", "17", "25"],
-        "respostaCorreta": "17",
+        "opcoes": ["$12$", "$15$", "$17$", "$25$"],
+        "respostaCorreta": "$17$",
         "unidade": "Números",
         "ano": "7º ano",
-        "habilidadeBncc": "EF07MA01",
-        "habilidadeSaeb": "H07",
-        "assunto": "Potenciação",
-        "instituicao": "Maceió"
+         "habilidadeBncc": "EF06MA03",
+        "habilidadeSaeb": "9N1.5"",
+        "assunto": "Expressões numéricas",
+        "instituicao": "QuizMat"
     },
-    {
-        "pergunta": "Qual o MMC entre 12 e 18?",
-        "opcoes": ["6", "18", "36", "72"],
-        "respostaCorreta": "36",
-        "unidade": "Números",
-        "ano": "6º ano",
-        "habilidadeBncc": "EF06MA06",
-        "habilidadeSaeb": "H08",
-        "assunto": "MMC",
-        "instituicao": "Maceió"
-    }
+    
 ]
