@@ -394,3 +394,7 @@ footer {
     display: inline-block; /* Garante que a borda se ajuste ao tamanho da equação */
     margin: 15px auto;
 }
+/* Estilo para centralizar blocos de conteúdo */
+.bloco-centralizado {
+    text-align: center;
+}
