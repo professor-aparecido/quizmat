@@ -63,15 +63,16 @@
 },
     
     {
-        "pergunta": "Quanto é 7 x 8?",
-        "opcoes": ["54", "56", "64", "49"],
-        "respostaCorreta": "56",
+        "pergunta": "Janaina é uma das clientes de Rosana que mais frequentam o restaurante. Na última refeição que fez nesse restaurante, ela consumiu 0,578 kg de comida salgada. Além dessa quantidade, ela consumiu 0,25 kg de doce de leite. Qual foi a quantidade total de comida, em quilograma, que Janaina consumiu nessa refeição?",
+        "opcoes": ["0,328 kg.", "0,603 kg.", "0,728 kg.", "0,828 kg."],
+        "respostaCorreta": "0,828 kg.",
         "unidade": "Números",
         "ano": "6º ano",
         "habilidadeBncc": "EF06MA07",
-        "habilidadeSaeb": "H02",
-        "assunto": "Multiplicação",
-        "instituicao": "Maceió"
+        "habilidadeBncc": "EF06MA11",
+        "habilidadeSaeb": "9N1.5",
+        "assunto": "Operações",
+        "instituicao": "CAED"
     },
     {
         "pergunta": "O que é um número primo?",
