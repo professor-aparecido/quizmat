@@ -1,15 +1,20 @@
 [
-    {
-        "pergunta": "Qual a probabilidade de um dado comum cair em um número par?",
-        "opcoes": ["1/6", "1/3", "1/2", "2/3"],
-        "respostaCorreta": "1/2",
-        "unidade": "Probabilidade e Estatística",
-        "ano": "8º ano",
-        "habilidadeBncc": "EF08MA22",
-        "habilidadeSaeb": "H06",
-        "assunto": "Cálculo de probabilidade",
-        "instituicao": "Maceió"
-    },
+   {
+    "pergunta": "<div>O gráfico abaixo apresenta as quantidades de mercadorias femininas e masculinas que Delma recebeu para reposição do estoque em sua loja.</div> <div class='bloco-imagem'><img src='imagens/img03.png' alt='Imagem.'> </div> <div>De acordo com esse gráfico, qual foi o tipo de mercadoria masculina que Delma recebeu em maior quantidade?",
+    "opcoes": [
+        "Carteira.",
+        "Chapéu.",
+        "Roupa.",
+        "Sapato."
+    ],
+    "respostaCorreta": "Roupa.",
+    "unidade": "Probabilidade e Estatística",
+    "ano": "6º ano",
+    "habilidadeBncc": "EF06MA31",
+    "habilidadeSaeb": "9E1.1",
+    "assunto": "Leitura e interpretação de tabelas e gráficos",
+    "instituicao": "CAED"
+},
     {
         "pergunta": "Qual a média dos números 2, 4 e 6?",
         "opcoes": ["2", "4", "6", "12"],
