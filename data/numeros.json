@@ -1,6 +1,6 @@
 [
     {
-        "pergunta": "Após entregar uma encomenda, a gerente da fábrica fez um levantamento para determinar a quantidade de velas que ficaram em estoque. Para isso, ela elaborou a expressão numérica apresentada no quadro abaixo.$$[(115 + 120) \\times 2] - (130 + 95)$$ Qual é a quantidade total de velas que ficaram em estoque nessa fábrica?",
+        "pergunta": "Após entregar uma encomenda, a gerente da fábrica fez um levantamento para determinar a quantidade de velas que ficaram em estoque. Para isso, ela elaborou a expressão numérica apresentada no quadro abaixo.<br><br> <span class='equation-box'>$$[(115 + 120) \\times 2] - (130 + 95)$$</span> Qual é a quantidade total de velas que ficaram em estoque nessa fábrica?",
         "opcoes": ["130", "245", "345", "435"],
         "respostaCorreta": "245",
         "unidade": "Números",
