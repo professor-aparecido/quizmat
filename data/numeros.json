@@ -46,7 +46,7 @@
 },
 
    {
-    "pergunta": "<div> Vilma comprou nessa loja um par de sapatos e de óculos. Observe os preços de cada um desses produtos na figura abaixo.</div> <div class='bloco-imagem'><img src='imagens/img04.png' alt='Imagem.'> </div> <div>No total, quantos reais custou essa compra de Vilma?",
+    "pergunta": "Vilma comprou nessa loja um par de sapatos e de óculos. Observe os preços de cada um desses produtos na figura abaixo. <div class='bloco-imagem'><img src='imagens/img04.png' alt='Imagem.'> </div> <div>No total, quantos reais custou essa compra de Vilma?",
     "opcoes": [
         "R$ 87,40.",
         "R$ 40,15.",
@@ -75,7 +75,7 @@
         "instituicao": "CAED"
     },
 {
-    "pergunta": "<div>Carla foi a uma loja de cosméticos e comprou uma escova e um pote de creme. Observe abaixo o preço de cada um desses produtos.</div> <div class='bloco-imagem'><img src='imagens/img07.png' alt='Imagem.'> </div> <div>Após a atendente informar o valor total a ser pago por esses produtos, Carla, com o objetivo de facilitar o troco, entregou a essa atendente a quantia de R$ 61,70. Qual foi o valor, em real, que Carla recebeu de troco dessa atendente?",
+    "pergunta": "Carla foi a uma loja de cosméticos e comprou uma escova e um pote de creme. Observe abaixo o preço de cada um desses produtos. <div class='bloco-imagem'><img src='imagens/img07.png' alt='Imagem.'> </div> <div>Após a atendente informar o valor total a ser pago por esses produtos, Carla, com o objetivo de facilitar o troco, entregou a essa atendente a quantia de R$ 61,70. Qual foi o valor, em real, que Carla recebeu de troco dessa atendente?",
     "opcoes": [
         "R$ 4,00.",
         "R$ 5,00.",
