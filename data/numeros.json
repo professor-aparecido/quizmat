@@ -151,6 +151,22 @@
     "habilidadeSaeb": "9N1.4",
     "assunto": "Reta numérica",
     "instituicao": "CAED"
+},
+   {
+    "pergunta": "João foi à loja de Carlos, comprou alguns itens e realizou o pagamento por PIX para obter o desconto oferecido. <div class='bloco-imagem'><img src='imagens/img10.png' alt='Imagem.'> </div> <div>O valor total pago por João foi R$ 63,00. Qual seria o valor total a ser pago sem o desconto oferecido?",
+    "opcoes": [
+        "R$ 64,10.",
+        "R$ 69,30.",
+        "R$ 70,00.",
+        "R$ 73,00."
+    ],
+    "respostaCorreta": "R$ 70,00.",
+    "unidade": "Números",
+    "ano": "9º ano",
+    "habilidadeBncc": "EF09MA05",
+    "habilidadeSaeb": "9N2.3",
+    "assunto": "Porcentagem",
+    "instituicao": "CAED"
 }
     
 ]
