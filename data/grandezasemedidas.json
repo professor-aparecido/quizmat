@@ -1,13 +1,13 @@
 [
     {
-        "pergunta": "Quantos centímetros tem um metro?",
-        "opcoes": ["10", "100", "1000", "10000"],
-        "respostaCorreta": "100",
+        "pergunta": "Rosana observou que, no início do expediente da última terça-feira, haviam sido produzidos 3 500 gramas de arroz integral. No final desse dia, ela observou que uma parte dessa quantidade foi consumida pelos clientes, restando um total de 2 quilogramas de arroz integral. Qual foi a quantidade de arroz integral, em grama, que foi consumida nesse dia?",
+        "opcoes": ["1 500 g.", "3 300 g.", "3 480 g.", "3 498 g."],
+        "respostaCorreta": "1 500 g.",
         "unidade": "Grandezas e Medidas",
         "ano": "6º ano",
-        "habilidadeBncc": "EF06MA20",
-        "habilidadeSaeb": "H05",
-        "assunto": "Sistema métrico decimal",
+        "habilidadeBncc": "EF06MA24",
+        "habilidadeSaeb": "9M2.1",
+        "assunto": "Conversão de unidades de medida",
         "instituicao": "Maceió"
     }
 ]
