@@ -90,28 +90,18 @@
     "instituicao": "CAED"
 },
    
-    {
-        "pergunta": "O que é um número primo?",
-        "opcoes": ["Qualquer número inteiro", "Um número divisível apenas por 1 e por ele mesmo", "Qualquer número ímpar", "Um número divisível por 2"],
-        "respostaCorreta": "Um número divisível apenas por 1 e por ele mesmo",
-        "unidade": "Números",
-        "ano": "6º ano",
-        "habilidadeBncc": "EF06MA04",
-        "habilidadeSaeb": "H03",
-        "assunto": "Divisibilidade",
-        "instituicao": "Maceió"
-    },
-    {
-        "pergunta": "Qual o valor do logaritmo de 100 na base 10?",
-        "opcoes": ["1", "2", "10", "100"],
-        "respostaCorreta": "2",
-        "unidade": "Números",
-        "ano": "3º EM",
-        "habilidadeBncc": "EM13MAT301",
-        "habilidadeSaeb": "H13",
-        "assunto": "Logaritmos",
-        "instituicao": "Maceió"
-    },
+     {
+    "pergunta": "Observe a expressão numérica apresentada no quadro abaixo.<br><br> <div class='bloco-centralizado'><span class='equation-box'>$$2^6\\div4-2$$</span></div> <br><br> Qual é o valor numérico dessa expressão?",
+    "opcoes": ["32.", "14.", "7.", "1."],
+    "respostaCorreta": "14.",
+    "unidade": "Números",
+    "ano": "6º ano",
+    "habilidadeBncc": "EF06MA03",
+    "habilidadeSaeb": "9N1.5",
+    "assunto": "Expressões numéricas",
+    "instituicao": "CAED"
+},
+    
     {
         "pergunta": "Calcule $3^2 + 4^2$.",
         "opcoes": ["$7$", "$14$", "$25$", "$49$"],
