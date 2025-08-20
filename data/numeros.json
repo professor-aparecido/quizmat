@@ -135,6 +135,22 @@
         "habilidadeSaeb": "9N1.5",
         "assunto": "Expressões numéricas",
         "instituicao": "QuizMat"
-    }
+    },
+   {
+    "pergunta": " Observe os pontos K, L, M e N destacados na reta numérica abaixo, que está dividida em partes iguais. <div class='bloco-imagem'><img src='imagens/img08.png' alt='Imagem.'> </div> <div>Qual é o ponto que corresponde a localização do número 1,25 nessa reta numérica?",
+    "opcoes": [
+        "K.",
+        "L.",
+        "M.",
+        "N."
+    ],
+    "respostaCorreta": "M.",
+    "unidade": "Números",
+    "ano": "6º ano",
+    "habilidadeBncc": "EF06MA01",
+    "habilidadeSaeb": "9N1.4",
+    "assunto": "Operações",
+    "instituicao": "CAED"
+}
     
 ]
