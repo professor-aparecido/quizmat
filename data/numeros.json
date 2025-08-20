@@ -74,6 +74,23 @@
         "assunto": "Operações",
         "instituicao": "CAED"
     },
+{
+    "pergunta": "<div>Carla foi a uma loja de cosméticos e comprou uma escova e um pote de creme. Observe abaixo o preço de cada um desses produtos.</div> <div class='bloco-imagem'><img src='imagens/img07.png' alt='Imagem.'> </div> <div>Após a atendente informar o valor total a ser pago por esses produtos, Carla, com o objetivo de facilitar o troco, entregou a essa atendente a quantia de R$ 61,70. Qual foi o valor, em real, que Carla recebeu de troco dessa atendente?",
+    "opcoes": [
+        "R$ 4,00.",
+        "R$ 5,00.",
+        "R$ 14,00.",
+        "R$ 15,00."
+    ],
+    "respostaCorreta": "R$ 4,00.",
+    "unidade": "Números",
+    "ano": "6º ano",
+    "habilidadeBncc": "EF06MA11",
+    "habilidadeSaeb": "9N1.5",
+    "assunto": "Operações",
+    "instituicao": "CAED"
+},
+   
     {
         "pergunta": "O que é um número primo?",
         "opcoes": ["Qualquer número inteiro", "Um número divisível apenas por 1 e por ele mesmo", "Qualquer número ímpar", "Um número divisível por 2"],
