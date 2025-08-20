@@ -12,8 +12,8 @@
 },
     {
     "pergunta": "<div>Observe os quatro pontos destacados no plano cartesiano abaixo.</div> <div class='bloco-imagem'><img src='imagens/img06.png' alt='Imagem.'> </div> <div>O par ordenado (6, 5) corresponde a qual ponto nesse plano cartesiano?",
-    "opcoes": [ "I.","II.","III.", "IV."],
-    "respostaCorreta": "III.",
+    "opcoes": [ "P.","Q.","R.", "S."],
+    "respostaCorreta": "Q.",
     "unidade": "Geometria",
     "ano": "6º ano",
     "habilidadeBncc": "EF06MA16",
