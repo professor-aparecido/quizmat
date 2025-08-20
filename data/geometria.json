@@ -1,6 +1,6 @@
 [
     {
-    "pergunta": "<div>Observe algumas figuras geométricas desenhadas na malha quadriculada abaixo.</div> <div class='bloco-imagem'><img src='imagens/img05.png' width="50%" alt='Imagem.'> </div> <div>Qual dessas figuras é um trapézio?",
+    "pergunta": "<div>Observe algumas figuras geométricas desenhadas na malha quadriculada abaixo.</div> <div class='bloco-imagem'><img src='imagens/img05.png' width=\"50%\" alt='Imagem.'> </div> <div>Qual dessas figuras é um trapézio?",
     "opcoes": [ "I.","II.","III.", "IV."],
     "respostaCorreta": "III.",
     "unidade": "Geometria",
