@@ -1,6 +1,6 @@
 [
     {
-    "pergunta": "<div>Observe algumas figuras geométricas desenhadas na malha quadriculada abaixo.</div> <div class='bloco-imagem'><img src='imagens/img05.png' width=\"70%\" alt='Imagem.'> </div> <div>Qual dessas figuras é um trapézio?",
+    "pergunta": "Observe algumas figuras geométricas desenhadas na malha quadriculada abaixo. <div class='bloco-imagem'><img src='imagens/img05.png' width=\"70%\" alt='Imagem.'> </div> <div>Qual dessas figuras é um trapézio?",
     "opcoes": [ "I.","II.","III.", "IV."],
     "respostaCorreta": "III.",
     "unidade": "Geometria",
@@ -11,7 +11,7 @@
     "instituicao": "CAED"
 },
     {
-    "pergunta": "<div>Observe os quatro pontos destacados no plano cartesiano abaixo.</div> <div class='bloco-imagem'><img src='imagens/img06.png' alt='Imagem.'> </div> <div>O par ordenado (6, 5) corresponde a qual ponto nesse plano cartesiano?",
+    "pergunta": "Observe os quatro pontos destacados no plano cartesiano abaixo. <div class='bloco-imagem'><img src='imagens/img06.png' alt='Imagem.'> </div> <div>O par ordenado (6, 5) corresponde a qual ponto nesse plano cartesiano?",
     "opcoes": [ "P.","Q.","R.", "S."],
     "respostaCorreta": "Q.",
     "unidade": "Geometria",
