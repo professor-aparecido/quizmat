@@ -1,20 +1,15 @@
 [
     {
-        "pergunta": "Qual a soma dos ângulos internos de um triângulo?",
-        "opcoes": [
-            "90°",
-            "180°",
-            "270°",
-            "360°"
-        ],
-        "respostaCorreta": "180°",
-        "unidade": "Geometria",
-        "ano": "6º ano",
-        "habilidadeBncc": "EF06MA24",
-        "habilidadeSaeb": "H04",
-        "assunto": "Ângulos",
-        "instituicao": "Maceió"
-    },
+    "pergunta": "<div>Observe algumas figuras geométricas desenhadas na malha quadriculada abaixo.</div> <div class='bloco-imagem'><img src='imagens/img05.png' alt='Imagem.'> </div> <div>Qual dessas figuras é um trapézio?",
+    "opcoes": [ "I.","II.","III.", "IV."],
+    "respostaCorreta": "III.",
+    "unidade": "Geometria",
+    "ano": "6º ano",
+    "habilidadeBncc": "EF06MA20",
+    "habilidadeSaeb": "9G1.6",
+    "assunto": "Quadriláteros",
+    "instituicao": "CAED"
+},
     {
         "pergunta": "O que é um quadrado?",
         "opcoes": [
