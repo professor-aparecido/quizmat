@@ -29,7 +29,7 @@
 },
 
     {
-    "pergunta": "<div>João quer comprar um conjunto formado por 1 camisa e 1 calça nessa loja. Observe abaixo as 6 camisas e as 4 calças que Delma apresentou a João, para que ele pudesse formar esse conjunto.</div> <div class='bloco-imagem'><img src='imagens/img02.png' alt='Imagem.'> </div> <div>Qual é a quantidade total de conjuntos diferentes que João pode formar escolhendo 1 camisa e 1 calça?",
+    "pergunta": "<div>João quer comprar um conjunto formado por 1 camisa e 1 calça nessa loja. Observe abaixo as 6 camisas e as 4 calças que Delma apresentou a João, para que ele pudesse formar esse conjunto.</div> <div class='bloco-imagem'><img src='imagens/img02.png' width=\"80%\" alt='Imagem.'> </div> <div>Qual é a quantidade total de conjuntos diferentes que João pode formar escolhendo 1 camisa e 1 calça?",
     "opcoes": [
         "4",
         "6",
