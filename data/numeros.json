@@ -12,7 +12,7 @@
 },
     
  {
-    "pergunta": "<div>Na figura abaixo, o vestido que Maria comprou nessa loja está representado com a indicação do seu comprimento.</div> <div class='bloco-imagem'><img src='imagens/img01.png' alt='Imagem.'> <span>107 centímetros</span></div> <div>Maria vai cortar esse vestido, retirando 5,85 centímetros do seu comprimento. Qual será a medida do comprimento desse vestido, em centímetro, após Maria fazer esse corte?</div>",
+    "pergunta": "Na figura abaixo, o vestido que Maria comprou nessa loja está representado com a indicação do seu comprimento. <div class='bloco-imagem'><img src='imagens/img01.png' alt='Imagem.'> <span>107 centímetros</span></div> <div>Maria vai cortar esse vestido, retirando 5,85 centímetros do seu comprimento. Qual será a medida do comprimento desse vestido, em centímetro, após Maria fazer esse corte?</div>",
     "opcoes": [
         "101,15 cm",
         "102,25 cm",
@@ -29,7 +29,7 @@
 },
 
     {
-    "pergunta": "<div>João quer comprar um conjunto formado por 1 camisa e 1 calça nessa loja. Observe abaixo as 6 camisas e as 4 calças que Delma apresentou a João, para que ele pudesse formar esse conjunto.</div> <div class='bloco-imagem'><img src='imagens/img02.png' width=\"80%\" alt='Imagem.'> </div> <div>Qual é a quantidade total de conjuntos diferentes que João pode formar escolhendo 1 camisa e 1 calça?",
+    "pergunta": "João quer comprar um conjunto formado por 1 camisa e 1 calça nessa loja. Observe abaixo as 6 camisas e as 4 calças que Delma apresentou a João, para que ele pudesse formar esse conjunto. <div class='bloco-imagem'><img src='imagens/img02.png' width=\"80%\" alt='Imagem.'> </div> <div>Qual é a quantidade total de conjuntos diferentes que João pode formar escolhendo 1 camisa e 1 calça?",
     "opcoes": [
         "4",
         "6",
