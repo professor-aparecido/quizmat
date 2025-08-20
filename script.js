@@ -248,14 +248,16 @@ function verificarResposta(opcaoSelecionada, button) {
     const perguntaAtual = questoesFiltradas[perguntaAtualIndex];
     const respostaCorreta = perguntaAtual.respostaCorreta;
     
-    const suaResposta = button.dataset.valorOpcao;
+    // CORRIGIDO: Agora usa 'dataset.opcao' para corresponder ao HTML
+    const suaResposta = button.dataset.opcao;
     
     const respostaFoiCorreta = suaResposta === respostaCorreta;
     
     document.querySelectorAll(".option-button").forEach(btn => btn.disabled = true);
 
     const botaoCorreto = Array.from(document.querySelectorAll(".option-button")).find(btn => {
-        return btn.dataset.valorOpcao === respostaCorreta;
+        // CORRIGIDO: Usa 'dataset.opcao' aqui também
+        return btn.dataset.opcao === respostaCorreta;
     });
 
     if (respostaFoiCorreta) {
@@ -276,7 +278,7 @@ function verificarResposta(opcaoSelecionada, button) {
         respostaCorreta: respostaCorreta,
         correto: respostaFoiCorreta
     });
-
+}
     // Se a pergunta atual é a última, exibe a tela de resultado final
     if (perguntaAtualIndex === questoesFiltradas.length - 1) {
         exibirResultadoFinal();
@@ -327,3 +329,10 @@ restartButton.addEventListener("click", () => {
     quizContainer.style.display = "none";
     filterContainer.style.display = "flex";
 });
+// Função para embaralhar um array (algoritmo Fisher-Yates)
+function embaralharArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
