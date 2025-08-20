@@ -44,6 +44,23 @@
     "assunto": "Operações",
     "instituicao": "CAED"
 },
+
+   {
+    "pergunta": "<div> Vilma comprou nessa loja um par de sapatos e de óculos. Observe os preços de cada um desses produtos na figura abaixo.</div> <div class='bloco-imagem'><img src='imagens/img04.png' alt='Imagem.'> </div> <div>No total, quantos reais custou essa compra de Vilma?",
+    "opcoes": [
+        "R$ 87,40.",
+        "R$ 40,15.",
+        "R$ 39,15.",
+        "R$ 29,65."
+    ],
+    "respostaCorreta": "R$ 40,15.",
+    "unidade": "Números",
+    "ano": "6º ano",
+    "habilidadeBncc": "EF06MA11",
+    "habilidadeSaeb": "9N1.5",
+    "assunto": "Operações",
+    "instituicao": "CAED"
+},
     
     {
         "pergunta": "Quanto é 7 x 8?",
