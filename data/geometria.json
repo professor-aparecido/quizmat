@@ -69,22 +69,7 @@
         "assunto": "Classificação de triângulos",
         "instituicao": "Maceió"
     },
-    {
-        "pergunta": "Qual o volume de um cubo com lado 3cm?",
-        "opcoes": [
-            "9 cm³",
-            "18 cm³",
-            "27 cm³",
-            "81 cm³"
-        ],
-        "respostaCorreta": "27 cm³",
-        "unidade": "Geometria",
-        "ano": "9º ano",
-        "habilidadeBncc": "EF09MA18",
-        "habilidadeSaeb": "H15",
-        "assunto": "Volume de sólidos",
-        "instituicao": "Maceió"
-    },
+    
      {
     "pergunta": "Um pedreiro construiu uma escada com os restos de madeira de uma construção. Como esses restos não possuíam medidas iguais e não eram todos regulares, a escada ficou com um aspecto irregular. Observe, na imagem abaixo, uma representação da escada, em que os segmentos $\\overline{PS}$, $\\overline{QT}$ e $\\overline{RU}$ são paralelos. <div class='bloco-imagem'><img src='imagens/img09.png' width=\"40%\" alt='Imagem.'> </div> O pedreiro também percebeu que precisaria reforçar a escada, por isso utilizou uma ripa de madeira em todo segmento $\\overline{QR}$. Qual é a medida, em centímetro, da ripa de madeira que ele utilizou?",
     "opcoes": [ "20 cm.","24 cm.","37,5 cm.", "66,6 cm."],
