@@ -184,6 +184,22 @@
     "habilidadeSaeb": "9N2.3",
     "assunto": "Porcentagem",
     "instituicao": "ENCCEJA"
+},
+    {
+    "pergunta": "Uma indústria, necessitando contratar mão de obra, elaborou um gráfico no qual apresenta a distribuição das 80 vagas que precisa preencher. Porém, ficou faltando especificar o percentual de vagas para operador de máquinas.<div class='bloco-imagem'><img src='imagens/img11.png' alt='Imagem.'> </div> Quantas vagas foram oferecidas para operador de máquinas?",
+    "opcoes": [
+        "20",
+        "32",
+        "40",
+        "48"
+    ],
+    "respostaCorreta": "32",
+    "unidade": "Números",
+    "ano": "9º ano",
+    "habilidadeBncc": "EF09MA05",
+    "habilidadeSaeb": "9N2.3",
+    "assunto": "Porcentagem",
+    "instituicao": "ENCCEJA"
 }
    
 ]
