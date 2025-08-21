@@ -67,6 +67,17 @@
         "habilidadeSaeb": "9A1.4",
         "assunto": "Produtos notáveis",
         "instituicao": "IFAL"
+    },
+    {
+        "pergunta": "Márcio fabrica móveis personalizados sob encomenda e precisa determinar o custo, em reais, da fabricação de certa quantidade de gaveteiros. Para isso, ele irá utilizar a expressão $M · (180 + 2 · G)$, em que $M$ corresponde à quantidade de gaveteiros encomendados e $G$ corresponde ao número de gavetas em cada móvel. Regina encomendou 7 desses gaveteiros, com 4 gavetas em cada um. De acordo com a expressão que Márcio irá utilizar, o custo, em reais, para produzir essa encomenda será de?",
+        "opcoes": [" 193 reais.", " 776 reais.", "1 268 reais.", "1 316 reais."],
+        "respostaCorreta": "1 316 reais.",
+        "unidade": "Álgebra",
+        "ano": "8º ano",
+        "habilidadeBncc": "EF08MA06",
+        "habilidadeSaeb": "9A2.2",
+        "assunto": "Valor numérico de expressões algébricas",
+        "instituicao": "CAED"
     }
     
 ]
