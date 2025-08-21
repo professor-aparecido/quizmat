@@ -32,6 +32,19 @@
         "assunto": "Equações de 2º grau",
         "instituicao": "CAED"
     },
+
+    {
+        "pergunta": " Observe a equação no quadro abaixo.$$\\boxed{2x^2+6x=0}$$Qual é o conjunto solução dessa equação?",
+        "opcoes": ["$S = \\{–6, 0\\}.$", "$S = \\{–3, 0\\}$.", "$S = \\{–3, 4\\}.$", "$S = \\{0, 3\\}.$"],
+        "respostaCorreta": "$S = \\{–3, 0\\}$.",
+        "unidade": "Álgebra",
+        "ano": "9º ano",
+        "habilidadeBncc": "EF09MA09",
+        "habilidadeSaeb": "9A1.7",
+        "assunto": "Equações de 2º grau",
+        "instituicao": "CAED"
+    },
+    
     {
         "pergunta": "Qual o resultado de $(a + b)^2$?",
         "opcoes": ["\\(a^2 + b^2\\)", "\\(a^2 + 2ab + b^2\\)", "\\(a^2 - 2ab + b^2\\)", "\\(a + b\\)"],
