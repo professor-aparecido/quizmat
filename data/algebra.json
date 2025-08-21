@@ -23,8 +23,8 @@
     },
     {
         "pergunta": "Ao fazer o planejamento para esse acampamento, Pedro e Raíssa notaram que poderiam utilizar uma equação para relacionar o deslocamento com o tempo de viagem. Observe, no quadro abaixo, a equação utilizada por eles.$$\\boxed{x^2+4x-21=0}$$O  conjunto solução dessa equação é",
-        "opcoes": ["S = {–21, 4}.", "S = {–7, 3}.", "S = {–3, 7}.", "S = {17, 21}."],
-        "respostaCorreta": "S = {–7, 3}.",
+        "opcoes": ["$S = \\{–21, 4\\}.$", "$S = \\{–7, 3\\}$.", "$S = \\{–3, 7\\}.$", "$S = \\{17, 21\\}.$"],
+        "respostaCorreta": "$S = \\{–7, 3\\}$.",
         "unidade": "Álgebra",
         "ano": "9º ano",
         "habilidadeBncc": "EF09MA09",
