@@ -314,6 +314,9 @@ function exibirGabarito() {
                 <p><strong>Resposta Correta:</strong> ${item.respostaCorreta}</p>
             </div>
         `;
+        if (index < respostasUsuario.length - 1) {
+            gabaritoHtml += '<hr class="gabarito-separador">';
+        }
     });
     
     gabaritoHtml += '</div>';
