@@ -170,7 +170,7 @@
 },
    
     {
-    "pergunta": "Uma confecção vende camisetas por R$ 30,00 cada peça. Oferece um desconto de 20% sobre esse preço a uma loja que as compra em grande quantidade. Essa loja revende as camisetas pelo preço de R$ 50,00 cada. Na última remessa, porém, o desconto oferecido pela confecção foi de 5% sobre o preço de cada camiseta. O lojista, visando manter o que lucrava com cada peça anteriormente, deverá reajustar o preço de revenda. Com base nas condições apresentadas, qual deve ser o novo preço de revenda, em real, de cada camiseta?",
+    "pergunta": "Uma confecção vende camisetas por R\\$ 30,00 cada peça. Oferece um desconto de 20% sobre esse preço a uma loja que as compra em grande quantidade. Essa loja revende as camisetas pelo preço de R\\$ 50,00 cada. Na última remessa, porém, o desconto oferecido pela confecção foi de 5% sobre o preço de cada camiseta. O lojista, visando manter o que lucrava com cada peça anteriormente, deverá reajustar o preço de revenda. Com base nas condições apresentadas, qual deve ser o novo preço de revenda, em real, de cada camiseta?",
     "opcoes": [
         "47,50",
         "48,50",
