@@ -46,15 +46,27 @@
     },
     
     {
-        "pergunta": "Qual o resultado de $(a + b)^2$?",
-        "opcoes": ["\\(a^2 + b^2\\)", "\\(a^2 + 2ab + b^2\\)", "\\(a^2 - 2ab + b^2\\)", "\\(a + b\\)"],
-        "respostaCorreta": "\\(a^2 + 2ab + b^2\\)",
+        "pergunta": " Com uma velocidade média de 60 km/h, Gabriela gastou 8 horas de carro para chegar ao seu destino. Na viagem de volta, Gabriela gastou 6 horas no mesmo trajeto. Qual foi a velocidade média, em quilometro por hora, da sua viagem de volta?",
+        "opcoes": ["30 km/h.", "45 km/h.", "62 km/h.", "80 km/h."],
+        "respostaCorreta": "80 km/h.",
         "unidade": "Álgebra",
-        "ano": "8º ano",
-        "habilidadeBncc": "EF08MA07",
-        "habilidadeSaeb": "H08",
+        "ano": "9º ano",
+        "habilidadeBncc": "EF09MA08",
+        "habilidadeSaeb": "9A2.1",
+        "assunto": "Regra de três simples",
+        "instituicao": "CAED"
+    },
+
+     {
+        "pergunta": "Determine o valor do produto $(3x + 2y)^2$, sabendo que $9x^2 + 4y^2 = 25$ e $xy = 2$.",
+        "opcoes": ["27.", "31.", "38.", "49."],
+        "respostaCorreta": "49.",
+        "unidade": "Álgebra",
+        "ano": "9º ano",
+        "habilidadeBncc": "EF09MA09",
+        "habilidadeSaeb": "9A1.4",
         "assunto": "Produtos notáveis",
-        "instituicao": "Maceió"
+        "instituicao": "IFAL"
     }
     
 ]
