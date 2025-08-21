@@ -1,36 +1,36 @@
 [
     {
-        "pergunta": "Qual o valor de x em 2x + 5 = 15?",
+        "pergunta": "Qual o valor de $x$ em $2x + 5 = 15$?",
         "opcoes": ["5", "10", "15", "20"],
         "respostaCorreta": "5",
         "unidade": "Álgebra",
         "ano": "7º ano",
-        "habilidadeBncc": "EF07MA13",
-        "habilidadeSaeb": "H03",
+        "habilidadeBncc": "EF07MA18",
+        "habilidadeSaeb": "9A1.1",
         "assunto": "Equações de 1º grau",
-        "instituicao": "Maceió"
+        "instituicao": "QuizMat"
     },
     {
-        "pergunta": "Qual é a área de um retângulo com lados 2x e 3x?",
-        "opcoes": ["5x", "6x", "5x²", "6x²"],
-        "respostaCorreta": "6x²",
+        "pergunta": "No estoque da loja de Carlos, havia uma certa quantidade de sacos de cimento. Ele precisou fazer uma nova encomenda de 400 sacos de cimento. A quantidade de sacos de cimento que havia no estoque ao quadrado, somada a 30 vezes essa quantidade, equivale à quantidade de sacos de cimento que Carlos encomendou. Qual era a quantidade de sacos de cimento que havia no estoque quando Carlos fez a nova encomenda?",
+        "opcoes": ["40.", "30.", "20.", "10."],
+        "respostaCorreta": "10.",
         "unidade": "Álgebra",
         "ano": "9º ano",
-        "habilidadeBncc": "EF09MA06",
-        "habilidadeSaeb": "H09",
-        "assunto": "Expressões algébricas",
-        "instituicao": "Maceió"
+        "habilidadeBncc": "EF09MA09",
+        "habilidadeSaeb": "9A1.7",
+        "assunto": "Equações de 2° grau",
+        "instituicao": "CAED"
     },
     {
-        "pergunta": "O que é uma equação do segundo grau?",
-        "opcoes": ["Uma equação com expoente 1", "Uma equação com expoente 2", "Uma equação com duas incógnitas", "Uma equação com duas variáveis"],
-        "respostaCorreta": "Uma equação com expoente 2",
+        "pergunta": "Ao fazer o planejamento para esse acampamento, Pedro e Raíssa notaram que poderiam utilizar uma equação para relacionar o deslocamento com o tempo de viagem. Observe, no quadro abaixo, a equação utilizada por eles.$$\\boxed{x^2+4x-21=0}$$O  conjunto solução dessa equação é",
+        "opcoes": ["S = {–21, 4}.", "S = {–7, 3}.", "S = {–3, 7}.", "S = {17, 21}."],
+        "respostaCorreta": "S = {–7, 3}.",
         "unidade": "Álgebra",
         "ano": "9º ano",
-        "habilidadeBncc": "EF09MA11",
-        "habilidadeSaeb": "H10",
+        "habilidadeBncc": "EF09MA09",
+        "habilidadeSaeb": "9A1.7",
         "assunto": "Equações de 2º grau",
-        "instituicao": "Maceió"
+        "instituicao": "CAED"
     },
     {
         "pergunta": "Qual o resultado de $(a + b)^2$?",
