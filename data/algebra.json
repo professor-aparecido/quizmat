@@ -42,38 +42,6 @@
         "habilidadeSaeb": "H08",
         "assunto": "Produtos notáveis",
         "instituicao": "Maceió"
-    },
-    {
-        "pergunta": "Qual a solução para $x^2 - 4 = 0$?",
-        "opcoes": ["x = 2", "x = -2", "x = 4", "x = 2 e x = -2"],
-        "respostaCorreta": "x = 2 e x = -2",
-        "unidade": "Álgebra",
-        "ano": "9º ano",
-        "habilidadeBncc": "EF09MA11",
-        "habilidadeSaeb": "H10",
-        "assunto": "Equações de 2º grau",
-        "instituicao": "Maceió"
-    },
-    {
-        "pergunta": "Resolva o sistema de equações: $$x+y=7$$ $$x-y=1$$",
-        "opcoes": ["x=4, y=3", "x=3, y=4", "x=5, y=2", "x=2, y=5"],
-        "respostaCorreta": "x=4, y=3",
-        "unidade": "Álgebra",
-        "ano": "8º ano",
-        "habilidadeBncc": "EF08MA16",
-        "habilidadeSaeb": "H09",
-        "assunto": "Sistemas de equações",
-        "instituicao": "Maceió"
-    },
-    {
-        "pergunta": "Qual o valor de 3x + 2 para x = 4?",
-        "opcoes": ["10", "12", "14", "16"],
-        "respostaCorreta": "14",
-        "unidade": "Álgebra",
-        "ano": "7º ano",
-        "habilidadeBncc": "EF07MA13",
-        "habilidadeSaeb": "H03",
-        "assunto": "Expressões algébricas",
-        "instituicao": "Maceió"
     }
+    
 ]
