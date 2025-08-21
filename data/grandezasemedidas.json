@@ -13,8 +13,8 @@
 
      {
         "pergunta": "Na loja de material de construção de Carlos, há um balde de 48 litros que tem a forma de um cilindro reto, cuja altura é igual ao dobro do raio da base. A medida do raio da base desse balde, em decímetro, é$$\\boxed{\\begin{array}{c}Dado:1L= dm^3. \\\\ Considere: \\pi=3.\\end{array}}$$",
-        "opcoes": ["$2,0 dm.$", "$2,5 dm.$", "$2,9 dm.$", "$3,5 dm.$"],
-        "respostaCorreta": "$2,0 dm.$",
+        "opcoes": ["$2,0\\,dm.$", "$2,5\\,dm.$", "$2,9\\,dm.$", "$3,5\\,dm.$"],
+        "respostaCorreta": "$2,0\\,dm.$",
         "unidade": "Grandezas e Medidas",
         "ano": "9º ano",
         "habilidadeBncc": "EF09MA19",
